@@ -1,0 +1,1 @@
+<template name="53322dc4"><view class="_view 53322dc4 content"><button bindtap="handleProxy" data-eventid="{{'53322dc4-0'}}" data-comkey="{{$k}}" class="_button 53322dc4">选择照片</button><image src="{{urls}}" class="_image 53322dc4"></image></view></template>
