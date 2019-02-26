@@ -31,8 +31,17 @@ export default {
 	methods:{
 		getuserinfo(e){
 			console.log(e)
-			this.userInfor = e.detail.userInfo
-			this.bus.$emit('eventBus',123)
+			if(e.detail.userInfo){
+				console.log('已授权')
+				this.userInfor = e.detail.userInfo
+				this.$store.commit('userInfo',e.detail.userInfo)
+				this.bus.$emit('eventBus',123)
+				wx.redirectTo({
+					url: '/pages/index/index'
+				})
+			}else{
+				console.log('未授权')
+			}
 		}
 	}
 };

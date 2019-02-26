@@ -19,6 +19,13 @@ export default {
 							that.$store.commit('userInfo',res.userInfo)
 						}
 					});
+					wx.redirectTo({
+						url: '/pages/index/index'
+					})
+				}else{
+					wx.redirectTo({
+						url: '/pages/login/login'
+					})
 				}
 			}
 		});
