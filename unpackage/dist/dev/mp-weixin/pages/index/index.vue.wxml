@@ -1,2 +1,0 @@
-<template name="53322dc4"><view class="_view 53322dc4">欢迎您回来----------------------
-	{{userInfo.nickName}}</view></template>

@@ -1,0 +1,25 @@
+{
+  "name": "uni-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "@dcloudio/uni-ui": "0.0.3",
+    "rem-to-px": "^1.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/125376053/uni-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/125376053/uni-app/issues"
+  },
+  "homepage": "https://github.com/125376053/uni-app#readme"
+}
