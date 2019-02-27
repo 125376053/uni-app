@@ -24,7 +24,7 @@
 		</view>
 		<ul>
 			<li title="我的列表">我的列表</li>
-			<li title="新闻列表">新闻列表</li>
+			<li @click="gotoAudio" title="新闻列表">音乐列表</li>
 			<li @click="gotoVideo" title="电影列表">电影列表</li>
 		</ul>
 		<view class="uni-padding-wrap uni-common-mt">
@@ -62,6 +62,11 @@
 			gotoVideo() {
 				wx.redirectTo({
 					url: '/pages/video/video'
+				})
+			},
+			gotoAudio(){
+				wx.redirectTo({
+					url:'/pages/audio/audio'
 				})
 			}
 		},

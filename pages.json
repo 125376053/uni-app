@@ -17,6 +17,12 @@
             "style" : {
                 "navigationBarTitleText" : "视频"
             }
+        },
+        {
+            "path" : "pages/audio/audio",
+            "style" : {
+				"navigationBarTitleText" : "音乐"
+			}
         }
     ],
     "globalStyle" : {
