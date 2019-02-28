@@ -21,8 +21,12 @@
         {
             "path" : "pages/audio/audio",
             "style" : {
-				"navigationBarTitleText" : "音乐"
-			}
+                "navigationBarTitleText" : "音乐"
+            }
+        },
+        {
+            "path" : "pages/photo/photo",
+            "style" : {}
         }
     ],
     "globalStyle" : {

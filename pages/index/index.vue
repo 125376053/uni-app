@@ -23,16 +23,10 @@
 			</view>
 		</view>
 		<ul>
-			<li title="我的列表">我的列表</li>
-			<li @click="gotoAudio" title="新闻列表">音乐列表</li>
-			<li @click="gotoVideo" title="电影列表">电影列表</li>
+			<li @click="gotoPic">图片列表</li>
+			<li @click="gotoAudio">音乐列表</li>
+			<li @click="gotoVideo">电影列表</li>
 		</ul>
-		<view class="uni-padding-wrap uni-common-mt">
-			<view>
-				<video id="myVideo" src="http://125.39.54.27/vwecam.gtimg.com/1009_c8ff19ead79e46cbb30f664b6a8569c5.f20.mp4?sha=03CA8F336D1A4ECBCFC77A52D42B7C2021B9C23C&ptype=http&vkey=FC98FF384323BA1C056E81C81FA968AB427107F7F4DE372FE0CAA181B1830B163FD4EF5F95390F3F1E5AE39385DAC05588390B5A3442C061&sdtfrom=v1000&owner=0&ocid=479466156&ocid=424744364&ocid=203017226"
-				 enable-danmu danmu-btn controls></video>
-			</view>
-		</view>
 		
 	</view>
 </template>
@@ -49,8 +43,7 @@
 				indicatorDots: true,
 				autoplay: true,
 				interval: 2000,
-				duration: 500,
-				
+				duration: 500
 			};
 		},
 		computed: {
@@ -60,13 +53,18 @@
 		},
 		methods: {
 			gotoVideo() {
-				wx.redirectTo({
+				wx.navigateTo({
 					url: '/pages/video/video'
 				})
 			},
 			gotoAudio(){
-				wx.redirectTo({
+				wx.navigateTo({
 					url:'/pages/audio/audio'
+				})
+			},
+			gotoPic(){
+				uni.navigateTo({
+					url:'/pages/photo/photo'
 				})
 			}
 		},
