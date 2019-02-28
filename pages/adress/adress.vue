@@ -1,10 +1,12 @@
 <template>
 	<view>
-		<button @click="getAdress">获取地址信息</button>
-		<text>
+		<button v-if="" @click="getAdress">获取地址信息</button>
+		<view>
 			我的地址
-			{{JSON.stringify(adress)}}
-		</text>
+			<view v-for="(item,index) in adress" :key="index">
+				<view>{{item}}</view>
+			</view>
+		</view>
 	</view>
 	
 </template>
@@ -13,8 +15,12 @@
 export default {
 	data() {
 		return {
-			adress:''
+			adress:uni.getStorageSync('adress')||''
 		};
+	},
+	onLoad() {
+		console.log(123)
+		console.log(this.adress)
 	},
 	methods: {
 		getAdress() {
@@ -34,7 +40,8 @@ export default {
 								console.log(res.detailInfo);
 								console.log(res.nationalCode);
 								console.log(res.telNumber);
-								that.adress = res.userName
+								uni.setStorageSync('adress',res)
+								that.adress = res
 							}
 						});
 					} else {
@@ -57,7 +64,8 @@ export default {
 									console.log(res.detailInfo);
 									console.log(res.nationalCode);
 									console.log(res.telNumber);
-									that.adress = res.userName
+									uni.setStorageSync('adress',res)
+									that.adress = res
 								}
 							});
 						}
