@@ -1,38 +1,54 @@
 {
-    "pages" : [
-        {
-            "path" : "pages/index/index",
-            "style" : {
-                "navigationBarTitleText" : ""
-            }
-        },
-        {
-            "path" : "pages/login/login",
-            "style" : {
-                "navigationBarTitleText" : ""
-            }
-        },
-        {
-            "path" : "pages/video/video",
-            "style" : {
-                "navigationBarTitleText" : "视频"
-            }
-        },
-        {
-            "path" : "pages/audio/audio",
-            "style" : {
-                "navigationBarTitleText" : "音乐"
-            }
-        },
-        {
-            "path" : "pages/photo/photo",
-            "style" : {}
-        }
-    ],
-    "globalStyle" : {
-        "navigationBarTextStyle" : "black",
-        "navigationBarTitleText" : "uni-app",
-        "navigationBarBackgroundColor" : "#F8F8F8",
-        "backgroundColor" : "#F8F8F8"
-    }
+	"pages": [{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": ""
+			}
+		},
+		{
+			"path": "pages/video/video",
+			"style": {
+				"navigationBarTitleText": "视频"
+			}
+		},
+		{
+			"path": "pages/audio/audio",
+			"style": {
+				"navigationBarTitleText": "音乐"
+			}
+		},
+		{
+			"path": "pages/photo/photo",
+			"style": {}
+		},
+		{
+			"path": "pages/adress/adress",
+			"style": {}
+		},
+		{
+			"path": "pages/map/map",
+			"style": {}
+		}
+	],
+	"globalStyle": {
+		
+	},
+	"tabBar": {
+		"list": [
+			{
+				"pagePath": "pages/adress/adress",
+				"text": "地址"
+			},
+			{
+				"pagePath": "pages/photo/photo",
+				"text": "相册"
+			}
+		]
+	}
 }
