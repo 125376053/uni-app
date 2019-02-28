@@ -39,15 +39,21 @@
 	"globalStyle": {
 		
 	},
-	"tabBar": {
-		"list": [
+	"tabBar":{
+		"color":"black",
+		"selectedColor":"red",
+		"list":[
 			{
-				"pagePath": "pages/adress/adress",
-				"text": "地址"
+				"pagePath":"pages/index/index",
+				"text":"首页",
+				"iconPath":"static/image/my.png",
+				"selectedIconPath":"static/image/my.png"
 			},
 			{
-				"pagePath": "pages/photo/photo",
-				"text": "相册"
+				"pagePath":"pages/adress/adress",
+				"text":"地址",
+				"iconPath":"static/image/map.png",
+				"selectedIconPath":"static/image/map.png"
 			}
 		]
 	}

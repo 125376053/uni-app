@@ -4,7 +4,7 @@
 			<view>
 				<video
 					id="myVideo"
-					src="http://125.39.54.27/vwecam.gtimg.com/1009_c8ff19ead79e46cbb30f664b6a8569c5.f20.mp4?sha=03CA8F336D1A4ECBCFC77A52D42B7C2021B9C23C&ptype=http&vkey=FC98FF384323BA1C056E81C81FA968AB427107F7F4DE372FE0CAA181B1830B163FD4EF5F95390F3F1E5AE39385DAC05588390B5A3442C061&sdtfrom=v1000&owner=0&ocid=479466156&ocid=424744364&ocid=203017226"
+					src="http://ips.ifeng.com/video19.ifeng.com/video09/2018/05/13/27513891-102-009-164435.mp4?vid=108e683d-f223-4225-b6d6-e5273ba27643&uid=1551365290034_yvm78c2586&from=v_Free&pver=vHTML5Player_v2.0.0&sver=&se=%E4%BC%98%E9%85%B7%E3%80%8A%E8%BF%99%EF%BC%81%E5%B0%B1%E6%98%AF%E8%A1%97%E8%88%9E%E3%80%8B&cat=57-58&ptype=57&platform=pc&sourceType=h5&dt=1526201001000&gid=uh9XMWk0k8FB&sign=e9e56960b2372b77575a67d6b3b2b7d4&tm=1551365292355"
 					enable-danmu
 					danmu-btn
 					controls
