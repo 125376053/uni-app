@@ -1,9 +1,6 @@
 <template>
 	<view v-if="userInfo">
-		<div class="top">
-			<text>欢迎您回来{{ userInfo.nickName }}</text>
-			<image class="avtar" :src="userInfo.avatarUrl"></image>
-		</div>
+		<HeaderTop></HeaderTop>
 		<view class="uni-padding-wrap">
 			<view class="page-section">
 				<view class="page-section-spacing">
@@ -33,10 +30,12 @@
 
 <script>
 	// import { uniList, uniListItem } from '@dcloudio/uni-ui';
+	import HeaderTop from "../../components/header.vue"
 	export default {
 		components: {
 			//uniList,
 			//uniListItem
+			HeaderTop
 		},
 		data() {
 			return {
@@ -87,27 +86,20 @@
 				uni.hideLoading();
 			}, 2000);
 		},
-		onReady() {}
+		onShareAppMessage(res) {
+			console.log(res)
+			if (res.from === 'button') { // 来自页面内分享按钮
+				console.log(res.target)
+			}
+			return {
+				title: '分享首页',
+				path: '/pages/index/index'
+			}
+		},
 	};
 </script>
 
 <style>
-	.top {
-		height: 40px;
-		line-height: 40px;
-		display: flex;
-		justify-content: center;
-		align-content: center;
-	}
-
-	.avtar {
-		width: 40px;
-		height: 40px;
-		border-radius: 50%;
-		display: block;
-		margin-left: 10px;
-	}
-
 	.uni-padding-wrap {
 		margin: 10px;
 	}
